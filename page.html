@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Cape Verde</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers:400|Roboto:400,700&display=swap">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Bangers', cursive;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 3.75rem;
+            margin: 0.5rem 0;
+            color: #0066cc;
+        }
+
+        h2, h3 {
+            font-size: 2.25rem;
+            margin: 0.5rem 0;
+            color: #003366;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #0066cc;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #003366;
+        }
+
+        .section {
+            padding: 4rem 1rem;
+        }
+
+        .section-light {
+            background-color: white;
+        }
+
+        .section-dark {
+            background-color: #003366;
+            color: white;
+        }
+
+        .text-center {
+            text-align: center;
+           
+            
+        }
+
+    
+
+        /* Hero Section */
+        /* Hero Section */
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 1rem;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 100vh; /* Make sure the hero section takes full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.hero .button {
+    margin-top: 1rem;
+}
+
+
+        /* Cards */
+        .card {
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns the content to the bottom */
+    color: white; /* Ensures text is readable on typical images */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('path_to_image.jpg'); /* Use a placeholder or specific image here */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Keeps the background behind the content */
+}
+
+.card-content {
+    position: relative;
+    padding: 1rem;
+    background: rgba(35, 105, 185, 0.411); /* Semi-transparent overlay for readability */
+}
+
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+      
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .testimonial {
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem;
+            width: 300px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+        }
+
+        .testimonial h5 {
+            margin: 1rem 0;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+            }
+
+            .navbar li {
+                margin: 0.5rem 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.25rem;
+            }
+
+            .cards-container {
+                flex-direction: column;
+            }
+
+            .testimonials {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Cape Verde</h1>
+        <p>Explore the beautiful islands of Cape Verde</p>
+        <a href="#about" class="button">Discover More</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-light" id="about">
+        <div class="text-center">
+            <h2>About Cape Verde</h2>
+            <p>Cape Verde, or Cabo Verde, is an island country spanning an archipelago of 10 volcanic islands in the central Atlantic Ocean. Located off the western coast of Africa, Cape Verde offers a unique blend of African and Portuguese cultures.</p>
+            <a href="#islands" class="button">Explore Islands</a>
+        </div>
+    </section>
+
+    <!-- Islands Section -->
+    <section class="section section-dark" id="islands">
+        <div class="text-center">
+            <h2>Explore the Islands</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./images/SA.jpeg" alt="SA Island">
+                    <div class="card-content">
+                        <h3>Santo Antão</h3>
+                        <p>Santo Antão is renowned for its mountainous terrain and hiking trails.</p>
+                        <a href="https://www.youtube.com/watch?v=VV6kXFvpNkk" class="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/SV.webp" alt="SV Island">
+                    <div class="card-content">
+                        <h3>São Vicente</h3>
+                        <p>São Vicente is famous for its vibrant cultural scene and beautiful beaches.</p>
+                        <a href="https://www.youtube.com/watch?v=BxITm3YoJrg" class="button">Learn More</a>
+                    </div>
+                </div>
+                <div class="card">
+                  <img src="./images/SLZ.jpg" alt="SLZ Island">
+                  <div class="card-content">
+                      <h3>Santa Luzia</h3>
+                      <p>Santa Luzia is a deserted island known for its pristine beaches and unique wildlife.</p>
+                      <a href="https://www.youtube.com/watch?v=IqaWY_KzOD8" class="button">Learn More</a>
+                  </div>
+              </div>
+                <div class="card">
+                    <img src="./images/SN.jpg" alt="SN Island">
+                    <div class="card-content">
+                        <h3>São Nicolau</h3>
+                        <p>São Nicolau is known for its rugged landscapes and rich agricultural heritage.</p>
+                        <a href="https://www.youtube.com/watch?v=cZf7cnEwroA" class="button">Learn More</a>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                  <img src="./images/SL.jpg" alt="SL Island">
+                  <div class="card-content">
+                      <h3>Sal</h3>
+                      <p>Sal is known for its white sandy beaches, turquoise waters, and watersports.</p>
+                      <a href="https://www.youtube.com/watch?v=alyKpwrx-2k" class="button">Learn More</a>
+                  </div>
+            </div>
+            <div class="card">
+              <img src="./images/BV.jpg" alt="BV Island">
+              <div class="card-content">
+                  <h3>Boa Vista</h3>
+                  <p>Boa Vista is known for its sand dunes and loggerhead turtle nesting sites.</p>
+                  <a href="https://www.youtube.com/watch?v=YdlcduPjqY0" class="button">Learn More</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/MO.jpeg" alt="MO Island">
+              <div class="card-content">
+                  <h3>Maio</h3>
+                  <p>Maio is famous for its tranquil beaches, salt flats, and relaxed island atmosphere.</p>
+                  <a href="https://www.youtube.com/watch?v=V3o0fmfpjjY" class="button">Learn More</a>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/ST.webp" alt="ST Island">
+              <div class="card-content">
+                  <h3>Santiago</h3>
+                  <p>Santiago is the largest island, offering a blend of history, culture, and diverse landscapes.</p>
+                  <a href="https://www.youtube.com/watch?v=ek5Ld_SoaIs" class="button">Learn More</a>
+              </div>
+        </div>
+        <div class="card">
+          <img src="./images/FG.webp" alt="FG Island">
+          <div class="card-content">
+              <h3>Fogo</h3>
+              <p>Fogo is home to an active volcano and the famous Chã das Caldeiras wine region.</p>
+              <a href="https://www.youtube.com/watch?v=cykn4S8vSw8" class="button">Learn More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./images/BR.jpg" alt="BR">
+          <div class="card-content">
+              <h3>Brava</h3>
+              <p>Brava: Brava is known as the "island of flowers" for its lush vegetation and charming villages.</p>
+              <a href="https://www.youtube.com/watch?v=JenTRcoXAYU" class="button">Learn More</a>
+          </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-light" id="testimonials">
+        <div class="text-center">
+            <h2>What Our Visitors Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Cape Verde is a hidden gem. The beaches are pristine, and the people are incredibly friendly!"</p>
+                    <h5>Jessica M.</h5>
+                </div>
+                <div class="testimonial">
+                    <p>"The perfect place to unwind and disconnect. The islands have something unique to offer for everyone."</p>
+                    <h5>Michael R.</h5>
+                </div>
+                <div class="testimonial">
+                    <p>"From hiking in Santo Antão to relaxing in Sal, Cape Verde is my new favorite travel destination."</p>
+                    <h5>Emily K.</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-dark" id="contact">
+        <div class="text-center">
+            <h2>Contact Us</h2>
+            <p>Ready to discover Cape Verde? Get in touch with us for more information and travel tips.</p>
+            <a href="vanthony@uta.cv" class="button">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Discover Cape Verde. All rights reserved.</p>
+    </footer>
+</body>
+</html>
